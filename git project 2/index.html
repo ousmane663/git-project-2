@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>PROJECT GIT BASH</title>
+</head>
+<body>
+	<script type="text/javascript" src="main.js"></script>
+<h2>les etapes a suivre</h2>
+<p>Avant toute chose aller dans le dossier, et faites clique gauche, open git bash here</p><br/>
+<p>1- touch index.html---pour céer ce fichier </p> <br/>
+<p>2- tu ouvre le fichier avec un editeur de texte, ou tu y inscrit le code souhaité.  </p> <br/>
+<p>3-faire la commande : git init -- pour initialiser le projet en créant un fichier caché</p><br/>
+<p>4- identification : on saisie le nom d'utilisateur et l'email de notre compte GITUP en faisant les commandes suivant</p><br/>
+<p>git config --global user.name "..."
+git config --global user.email "..."
+</p><br/>
+<p>5- apres l'identification ajoute ton fichier index.html en faisant le code suivant : git add index.html</p><br/>
+<p>git status permet de voir tous les fichier présauvegardé</p><br/>
+<p>pour supprimer un fichier présauvegarder utiliser git rm exemple ici : git rm --cached index.html. note : si vous ne mettez pas "--" il va  supprimer définitivement le fichier, aulieu de l'enlever uniquement dans la liste des fichiers présauvegarder</p><br/>
+<p>créons un nouveau ficher css : touch style.css</p><br/>
+<p>Comment ajouter tous les fichier présent dans un dossier : git add. (pour sélectionner tous les fichiers du dossier)</p><br/>
+<p>Pour supprimer tous les fichier d'un dossier il faut faire : git rm -r cached. <br/> les fichier dans le dossier idea : git rm -r cached .idea/ <br/></p><br/>
+<p>Si l'on veut ajouter plusieur fichiers specifiques par  exemple ici tous les fichiers . html et . css on fait : git add *.html *.css </p><br/>
+<p>la commande checkout permet de retourner en arriere ex : git checkout --. (ici le point signifie tous les fichier)<br/> on utilise git commit pour sauvegarder les fichiers ou dossier ex : git commit. <br/> on utilise git commit -m pour mettre le commentaire sur le changement ex : git commit -m 'changement html et css'</p><br/>
+<p>6- git branch<br/>faire : git status (pour savoir dans quelle branche on se trouve ex: branch master; pour créer une branche il faut utiliser git branch ... ex : git branch Mon-dossier (cela va créer une branche Mon-dossier). <br/>Pour changer de branche, on utilise :  git chekout ... ex : git checkout Mon-dossier (cela vous connecte à la branche Mon-dossier).<br/> si vous oubliez les des branches que vous avez créer, trouvez les avec : git branch --list. <br/> Créeons un fichier js dans la branche Mon-dossier : touch main.js </p>
+<p>retournons à la branche Mon-dossier, puis ajoutons nos fichiers : git branch Mon-dossier; git add . <br/> maintenant changeons de branche : git checkout master ; puis fusionnons les 2 branches master et Mon-dossier : git merge Mon-dossier</p><br/>
+<p>maintenant connectons notre travail local avec GitHub, pour ce faire ex : git remote add origin https://github.com/ousmane663/nom-repertoire.git<br/>git push -u origin master</p><br/>
+<p>maintenant on est connecté à github, tous nos fichiers y sont importés, créons un readme.md et sauvegardons le dans le git bash : touch README.md, git add. ; git commit -m "ajout de README" , maintenant importons le ou poussons le dans le github : git push  </p><br/>
+<p>si il y a d'autres développeur qui ont apportés des changement dans le projet, pour récupérer cela, utiliiser git pull ex git pull<br/> si l'on perd ses dossiers en local, on peut les récupérer en utilisant git clone et en y rattachant l'adresse qu'on recuper dans dowlod sur github ex : git clone https://github/ousmane663/repertoire.git (cela va télécharger vos documents enregistré dans github</p>
+
+
+
+</body>
+</html>
